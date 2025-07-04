@@ -43,4 +43,15 @@ This app is intentionally insecure. Do not deploy it on production or public ser
 License
 
 MIT License
+## Vulnerabilities Included
+
+| Vulnerability          | OWASP | Description                                      |
+|-----------------------|-------|-------------------------------------------------|
+| 💬 XSS                | A7    | User comments render unescaped HTML (unsafe)    |
+| 🛑 SQL Injection       | A1    | Login bypass using classic `' OR 1=1 --`         |
+| 🔁 CSRF                | A5    | Profile update without CSRF tokens                |
+| 🧾 IDOR                | A4    | Invoices accessible by changing `/invoice/<id>`  |
+| 📎 Insecure File Upload | A8    | Uploads allow arbitrary file types                |
+| 🧑‍💻 Broken Auth       | A2    | No rate limit or session expiration               |
+| ⚙️ Misconfiguration    | A6    | Debug mode enabled, stack traces visible          |
 
