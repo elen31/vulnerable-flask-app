@@ -25,3 +25,22 @@ This is a deliberately insecure Flask web application built for educational purp
 ```bash
 git clone https://github.com/elen31/vulnerable-flask-app.git
 cd vulnerable-flask-app
+Usage
+
+    Use /login to test SQL Injection.
+
+    Use /xss to test Cross-Site Scripting.
+
+    Use /upload to test insecure file uploads.
+
+    Use /idor?id=1 to test IDOR vulnerability.
+
+    Use /change_password to test broken authentication.
+
+Warning
+
+This app is intentionally insecure. Do not deploy it on production or public servers.
+License
+
+MIT License
+
